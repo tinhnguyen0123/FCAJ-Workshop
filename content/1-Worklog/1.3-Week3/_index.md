@@ -7,7 +7,7 @@ pre: " <b> 1.3. </b> "
 ---
 {{% notice warning %}}
 ⚠️ **Note:** The information below is extracted from the Internship Report Timeline.
-{{/ notice %}}
+{{% /notice %}}
 
 
 ### Week 3 Objectives:

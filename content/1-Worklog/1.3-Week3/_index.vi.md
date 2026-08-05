@@ -7,7 +7,7 @@ pre: " <b> 1.3. </b> "
 ---
 {{% notice warning %}}
 ⚠️ **Lưu ý:** Các thông tin dưới đây được trích xuất từ Bảng ghi nhận kết quả thực tập.
-{{/ notice %}}
+{{% /notice %}}
 
 
 ### Mục tiêu tuần 3:
