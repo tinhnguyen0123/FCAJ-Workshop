@@ -1,5 +1,5 @@
 ---
-title: "Event3"
+title: "AWS FCAJ Agent Forge - Deepdive"
 date: 2026-08-01
 weight: 3
 chapter: false

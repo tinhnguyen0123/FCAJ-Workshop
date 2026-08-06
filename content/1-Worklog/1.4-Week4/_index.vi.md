@@ -5,10 +5,6 @@ weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây được trích xuất từ Bảng ghi nhận kết quả thực tập.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 4:
 

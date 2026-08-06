@@ -5,10 +5,6 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is extracted from the Internship Report Timeline.
-{{% /notice %}}
-
 
 ### Week 1 Objectives:
 

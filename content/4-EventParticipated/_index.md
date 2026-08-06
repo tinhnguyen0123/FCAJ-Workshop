@@ -1,40 +1,31 @@
 ---
 title: "Events Participated"
-date: 2024-01-01
+date: 2026-08-01
 weight: 4
 chapter: false
 pre: " <b> 4. </b> "
 ---
 
-> In this section, you should list and describe in detail the events you have participated in during your internship or work experience.  
-> 
-> Each event should be presented in the format Event 1, Event 2, Event 3…, along with the following details:
-> * Event name
-> * Date and time
-> * Location (if applicable)
-> * Your role in the event (attendee, event support, speaker, etc.)
-> * A brief description of the event’s content and main activities
-> * Outcomes or value gained (lessons learned, new skills, contribution to the team/project)
-> * This listing helps demonstrate your actual participation as well as the soft skills and experience you have gained from each event.
+During my internship, I participated in three events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with wonderful moments.
 
-During my internship, I participated in two events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.
-
-### [Event 1](4.1-Event1/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
-
-&emsp;**Date & Time:** 09:00, August 13, 2025  
-
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
-
+### [Event 1: Cloud Architect](4.1-Event1/)  
+&emsp;**Event Name:** Cloud Architect  
+&emsp;**Date:** June 20, 2026  
 &emsp;**Role:** Attendee  
+&emsp;**Description:** A practical academic competition focused on cloud computing and system architecture, developing rapid thinking and teamwork under pressure.
 
 ---
 
-### [Event 2](4.2-Event2/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
-
-&emsp;**Date & Time:** 09:00, August 13, 2025  
-
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
-
+### [Event 2: FCAJ Community Day - June 2026](4.2-Event2/)  
+&emsp;**Event Name:** FCAJ Community Day - June 2026  
+&emsp;**Date:** June 27, 2026  
 &emsp;**Role:** Attendee  
+&emsp;**Description:** A community gathering for First Cloud AI Journey members to connect, share experiences, and learn about AWS technologies.
+
+---
+
+### [Event 3: AWS FCAJ Agent Forge - Deepdive](4.3-Event3/)  
+&emsp;**Event Name:** AWS FCAJ Agent Forge - Deepdive  
+&emsp;**Date:** August 1, 2026  
+&emsp;**Role:** Attendee  
+&emsp;**Description:** A deep-dive workshop on Agentic AI architectures, providing hands-on practical experience with Amazon Bedrock Agent Core for enterprise environments.
