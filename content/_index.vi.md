@@ -5,7 +5,11 @@ weight: 1
 chapter: false
 ---
 
+
 # Báo cáo thực tập
+
+
+
 ### Thông tin sinh viên:
 &emsp; **Họ và tên:** Nguyễn Hữu Tính
 
@@ -26,9 +30,6 @@ chapter: false
 &emsp; **Thời gian thực tập:** Từ ngày 22/06/2026 đến ngày 15/08/2026
 
 ![Ảnh đại diện của bạn](images/avatar.png)
-
-
-
 ### Nội dung báo cáo
 
 1.  [Worklog](1-Worklog/)
