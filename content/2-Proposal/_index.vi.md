@@ -5,11 +5,8 @@ weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-Tại phần này, bạn cần tóm tắt các nội dung trong workshop mà bạn **dự tính** sẽ làm.
+Tại phần này, tôi sẽ tóm tắt các nội dung trong workshop mà tôi **dự tính** sẽ làm.
 
 # IoT Weather Platform for Lab Research  
 ## Giải pháp AWS Serverless hợp nhất cho giám sát thời tiết thời gian thực  
