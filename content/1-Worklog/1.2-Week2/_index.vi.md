@@ -11,12 +11,12 @@ pre: " <b> 1.2. </b> "
 * Khám phá và làm quen với các dịch vụ cơ bản về AWS.
 
 ### Các công việc triển khai trong tuần này (29/06/2026 - 03/07/2026):
-| STT | Công việc | Kết quả đạt được |
-| --- | --------- | ---------------- |
-| 1 | Tạo tài khoản AWS và quản lý chi phí với AWS Budgets. | Hoàn thành |
-| 2 | Bảo mật và phân quyền: quản lý truy cập với IAM, IAM Roles cho EC2. | Hoàn thành |
-| 3 | Mạng (Networking): Cơ bản về Amazon VPC, AWS Route 53 (Hybrid DNS), CloudFront. | Hoàn thành |
-| 4 | Máy chủ và Container cơ bản: Amazon EC2, EC2 Auto Scaling, AWS Cloud9 và nhiều thứ liên quan khác. | Hoàn thành |
-| 5 | Lưu trữ và Cơ sở dữ liệu: S3 Static Website Hosting, Amazon RDS, Amazon DynamoDB. | Hoàn thành |
-| 6 | Giám sát và Công cụ: Amazon CloudWatch, AWS CLI. | Hoàn thành |
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | --------- | ------------ | --------------- | ------------------ |
+| 1 | Tạo tài khoản AWS và quản lý chi phí với AWS Budgets. | 29/06/2026 | 29/06/2026 |  |
+| 2 | Bảo mật và phân quyền: quản lý truy cập với IAM, IAM Roles cho EC2. | 30/06/2026 | 30/06/2026 |  |
+| 3 | Mạng (Networking): Cơ bản về Amazon VPC, AWS Route 53 (Hybrid DNS), CloudFront. | 01/07/2026 | 01/07/2026 |  |
+| 4 | Máy chủ và Container cơ bản: Amazon EC2, EC2 Auto Scaling, AWS Cloud9 và nhiều thứ liên quan khác. | 01/07/2026 | 01/07/2026 |  |
+| 5 | Lưu trữ và Cơ sở dữ liệu: S3 Static Website Hosting, Amazon RDS, Amazon DynamoDB. | 02/07/2026 | 02/07/2026 |  |
+| 6 | Giám sát và Công cụ: Amazon CloudWatch, AWS CLI. | 03/07/2026 | 03/07/2026 |  |
 

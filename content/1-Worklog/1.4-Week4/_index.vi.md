@@ -11,10 +11,10 @@ pre: " <b> 1.4. </b> "
 * Thiết lập hạ tầng mã nguồn và phát triển hệ thống xác thực.
 
 ### Các công việc triển khai trong tuần này (13/07/2026 - 18/07/2026):
-| STT | Công việc | Kết quả đạt được |
-| --- | --------- | ---------------- |
-| 1 | Thiết lập hạ tầng mã nguồn (IaC) & Mô hình Shared Library: Sử dụng AWS CDK trên C# (.NET 8). | Hoàn thành |
-| 2 | Tạo thư viện dùng chung GameShared.dll và thiết lập MSBuild PostBuild Event đồng bộ sang Unity. | Hoàn thành |
-| 3 | Phát triển Module Xác thực & Quản lý phiên: Tích hợp Amazon Cognito (đăng ký/đăng nhập, OTP). | Hoàn thành |
-| 4 | Lập trình API Silent Login khôi phục phiên hoạt động bằng Refresh Token. | Hoàn thành |
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | --------- | ------------ | --------------- | ------------------ |
+| 1 | Thiết lập hạ tầng mã nguồn (IaC) & Mô hình Shared Library: Sử dụng AWS CDK trên C# (.NET 8). | 13/07/2026 | 14/07/2026 |  |
+| 2 | Tạo thư viện dùng chung GameShared.dll và thiết lập MSBuild PostBuild Event đồng bộ sang Unity. | 15/07/2026 | 15/07/2026 |  |
+| 3 | Phát triển Module Xác thực & Quản lý phiên: Tích hợp Amazon Cognito (đăng ký/đăng nhập, OTP). | 16/07/2026 | 16/07/2026 |  |
+| 4 | Lập trình API Silent Login khôi phục phiên hoạt động bằng Refresh Token. | 17/07/2026 | 18/07/2026 |  |
 

@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4.3. </b> "
 ---
 
-# Summary Report: “AWS FCAJ Agent Forge - Deepdive”
+# Báo Cáo Tổng Hợp: “AWS FCAJ Agent Forge - Deepdive”
 ### Thông tin sự kiện
 
 - **Tên sự kiện:** AWS FCAJ Agent Forge - Deepdive

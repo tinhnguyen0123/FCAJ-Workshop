@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Bài thu hoạch “Cloud Architect”
+# Báo Cáo Tổng Hợp: “Cloud Architect”
 
 ### Thông Tin Sự Kiện
 

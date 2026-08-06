@@ -11,10 +11,10 @@ pre: " <b> 1.6. </b> "
 * Integrate AI into the game and optimize system performance.
 
 ### Tasks carried out this week (27/07/2026 - 01/08/2026):
-| No. | Task | Achievement |
-| --- | ---- | ----------- |
-| 1 | Integrate Generative AI into Game Storyline: Connect C# Backend with Amazon Bedrock (Claude AI). | Completed |
-| 2 | Optimize Performance & Solve Cold Start: Apply Native AOT for lightweight APIs. | Completed |
-| 3 | Configure AWS Lambda SnapStart for complex processing APIs to optimize response speed. | Completed |
-| 4 | Attend Agent Force - Deepdive event. | Completed |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --------- | ------------ | --------------- | ------------------ |
+| 1 | Integrate Generative AI into Game Storyline: Connect C# Backend with Amazon Bedrock (Claude AI). | 27/07/2026 | 28/07/2026 |  |
+| 2 | Optimize Performance & Solve Cold Start: Apply Native AOT for lightweight APIs. | 29/07/2026 | 29/07/2026 |  |
+| 3 | Configure AWS Lambda SnapStart for complex processing APIs to optimize response speed. | 30/07/2026 | 30/07/2026 |  |
+| 4 | Attend Agent Force - Deepdive event. | 31/07/2026 | 01/08/2026 |  |
 
