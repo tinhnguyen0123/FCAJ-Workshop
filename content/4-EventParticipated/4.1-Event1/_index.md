@@ -107,4 +107,4 @@ Observing the team competition demonstrated the importance of fast, effective co
 > Overall, Cloud Architect was more than a competition. It clearly reflected what I already understood and what I still need to improve, making it a practical and valuable learning experience.
 
 ### Event participation image
-![Event participation image](../images/Cloud%20Architect.png)
+![Event participation image](/FCAJ-Workshop/images/Cloud%20Architect.png)
