@@ -138,4 +138,4 @@ Attending the **“FCAJ Community Day - June 2026”** workshop was an enlighten
 > Overall, the event provided both deep technical knowledge and strategic perspectives, reshaping how I think about AI agent integration, system reliability, security, and enterprise productivity.
 
 ### Event participation image
-![Event participation image](/images/FCAJ%20Community%20Day.png)
+![Event participation image](../images/FCAJ%20Community%20Day.png)

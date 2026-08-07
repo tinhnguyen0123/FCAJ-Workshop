@@ -104,4 +104,4 @@ Attending the **“AWS FCAJ Agent Forge - Deepdive”** workshop was exceptional
 > Overall, the event provided both rich technical depth and a clear strategic roadmap for designing and operating secure, scalable AI Agent architectures in production.
 
 ### Event participation image
-![Event participation image](/images/AgentForge%20-Deepdive(Day1).png)
+![Event participation image](../images/AgentForge%20-Deepdive(Day1).png)
