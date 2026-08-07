@@ -105,3 +105,6 @@ Quan sát phần thi theo đội giúp em thấy rõ tầm quan trọng của gi
 - Em cần ôn tập AWS services và kiến trúc hệ thống có hệ thống hơn, đồng thời dành thêm thời gian thực hành trên AWS Management Console.
 
 > Tổng thể, Cloud Architect không chỉ là một cuộc thi mà còn giúp em nhìn lại rõ ràng những kiến thức mình đã nắm vững và những nội dung còn cần cải thiện. Đây là một trải nghiệm học tập thực tế và có giá trị.
+
+### Hình ảnh tham gia sự kiện
+![Hình ảnh tham gia sự kiện](/images/Cloud%20Architect.png)

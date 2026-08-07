@@ -105,3 +105,6 @@ Observing the team competition demonstrated the importance of fast, effective co
 - I should review AWS services and system architecture more systematically and spend more time practicing in the AWS Management Console.
 
 > Overall, Cloud Architect was more than a competition. It clearly reflected what I already understood and what I still need to improve, making it a practical and valuable learning experience.
+
+### Event participation image
+![Event participation image](/images/Cloud%20Architect.png)

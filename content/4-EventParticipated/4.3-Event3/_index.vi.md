@@ -101,3 +101,6 @@ Tham gia buổi workshop **“AWS FCAJ Agent Forge - Deepdive”** mang lại nh
 - Việc ứng dụng Bedrock Agent Core giúp tiết kiệm thời gian triển khai và tuân thủ các Best Practices của AWS.
 
 > Tổng thể, sự kiện không chỉ đem lại lượng kiến thức kỹ thuật đồ sộ mà còn giúp định hình rõ lộ trình xây dựng và vận hành hệ thống AI Agent an toàn, hiệu quả cho các dự án thực tế.
+
+### Hình ảnh tham gia sự kiện
+![Hình ảnh tham gia sự kiện](/images/AgentForge%20-Deepdive(Day1).png)

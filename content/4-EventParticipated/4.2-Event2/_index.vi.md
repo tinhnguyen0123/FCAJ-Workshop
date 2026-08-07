@@ -137,3 +137,6 @@ Tham dự workshop **“FCAJ Community Day - June 2026”** mang lại nhiều g
 
 
 > Tóm lại, sự kiện không chỉ cung cấp khối lượng kiến thức kỹ thuật chuyên sâu mà còn giúp định hình lại tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và tăng cường bảo mật trong kỷ nguyên AI.
+
+### Hình ảnh tham gia sự kiện
+![Hình ảnh tham gia sự kiện](/images/FCAJ%20Community%20Day.png)

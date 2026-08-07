@@ -97,8 +97,11 @@ Attending the **“AWS FCAJ Agent Forge - Deepdive”** workshop was exceptional
 - Effective blend of deep theoretical architecture with practical AWS console lab exercises.
 - Practical experience in creating Runtimes, configuring Gateways, and setting up Identity layers.
 
-#### Key Lessons Learned
+#### Lessons Learned
 - Building enterprise-ready agents demands rigorous standards across Security, Scalability, and Governance.
 - Utilizing Amazon Bedrock Agent Core significantly accelerates time-to-market while enforcing AWS architectural best practices.
 
 > Overall, the event provided both rich technical depth and a clear strategic roadmap for designing and operating secure, scalable AI Agent architectures in production.
+
+### Event participation image
+![Event participation image](/images/AgentForge%20-Deepdive(Day1).png)
