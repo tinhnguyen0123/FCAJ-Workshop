@@ -1,6 +1,6 @@
 ---
 title: "Week 8 Worklog"
-date: 2024-01-01
+date: 2026-08-15
 weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
@@ -8,46 +8,20 @@ pre: " <b> 1.8. </b> "
 
 ### Week 8 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* System evaluation, finalize documentation and package the project.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2 | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations | 10/08/2026 | 15/08/2026 | |
-| 3 | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br> | 10/08/2026 | 15/08/2026 | |
-| 4 | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 10/08/2026 | 15/08/2026 | |
-| 5 | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br> | 10/08/2026 | 15/08/2026 | |
-| 6 | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume | 10/08/2026 | 15/08/2026 | |
+### Tasks to be carried out this week (08/10/2026 - 08/15/2026):
 
+| Day | Task | Start Date | Completion Date |
+| --- | --- | --- | --- |
+| Mon | - Resolve outstanding bugs and optimize costs for unused AWS resources. | 08/10/2026 | 08/11/2026 |
+| Tue | - Continue to fix the remaining bugs. | 08/11/2026 | 08/11/2026 |
+| Wed | - Package entire source code (Frontend Unity + Backend CDK) and write README documentation. | 08/12/2026 | 08/12/2026 |
+| Thu | - Draft personal Internship Report, synthesizing technical metrics and achieved results. | 08/13/2026 | 08/15/2026 |
+| Fri | - Package all softcopy files and submit to the company's grading system. | 08/15/2026 | 08/15/2026 |
 
-### Week 8 Achievements:
+### Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* The final product is complete, stable, and meets AWS architecture standards.
+* Source code and technical documentation are fully handed over.
+* Successfully submitted the project on time, gaining valuable practical experience.

@@ -1,6 +1,6 @@
 ---
 title: "Week 7 Worklog"
-date: 2024-01-01
+date: 2026-08-08
 weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
@@ -8,46 +8,20 @@ pre: " <b> 1.7. </b> "
 
 ### Week 7 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Optimize security, system monitoring, and End-to-End testing.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2 | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations | 03/08/2026 | 08/08/2026 | |
-| 3 | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br> | 03/08/2026 | 08/08/2026 | |
-| 4 | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 03/08/2026 | 08/08/2026 | |
-| 5 | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br> | 03/08/2026 | 08/08/2026 | |
-| 6 | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume | 03/08/2026 | 08/08/2026 | |
+### Tasks to be carried out this week (08/03/2026 - 08/08/2026):
 
+| Day | Task | Start Date | Completion Date |
+| --- | --- | --- | --- |
+| Mon | - Move sensitive information (API Keys) into AWS Secrets Manager instead of hardcoding. | 08/03/2026 | 08/03/2026 |
+| Tue | - Set up Amazon CloudWatch Dashboard to monitor API latency and request volumes. | 08/04/2026 | 08/04/2026 |
+| Wed | - Program Fallback mechanism to return default stories when AI Bedrock times out. | 08/05/2026 | 08/05/2026 |
+| Thu | - Add transition effects and damage animations (Floating Text) to enhance Unity UI. | 08/06/2026 | 08/07/2026 |
+| Fri | - Run End-to-End tests on the entire game loop (Story -> Battle -> Reward) to find bugs. | 08/08/2026 | 08/08/2026 |
 
-### Week 7 Achievements:
+### Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Enhanced source code security via AWS Secrets Manager.
+* The system features self-recovery and clear monitoring alerts.
+* Game Feel improved through vivid visual effects and animations.

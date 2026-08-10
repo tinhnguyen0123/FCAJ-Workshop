@@ -8,13 +8,20 @@ pre: " <b> 1.6. </b> "
 
 ### Week 6 Objectives:
 
-* Integrate AI into the game and optimize system performance.
+* Automate infrastructure with AWS CDK and finalize Game Logic.
 
-### Tasks carried out this week (27/07/2026 - 01/08/2026):
-| Day | Task | Start Date | Completion Date | Reference Material |
-| --- | --------- | ------------ | --------------- | ------------------ |
-| 1 | Integrate Generative AI into Game Storyline: Connect C# Backend with Amazon Bedrock (Claude AI). | 27/07/2026 | 28/07/2026 |  |
-| 2 | Optimize Performance & Solve Cold Start: Apply Native AOT for lightweight APIs. | 29/07/2026 | 29/07/2026 |  |
-| 3 | Configure AWS Lambda SnapStart for complex processing APIs to optimize response speed. | 30/07/2026 | 30/07/2026 |  |
-| 4 | Attend Agent Force - Deepdive event. | 31/07/2026 | 01/08/2026 |  |
+### Tasks to be carried out this week (07/27/2026 - 08/01/2026):
 
+| Day | Task | Start Date | Completion Date |
+| --- | --- | --- | --- |
+| Mon | - Write Infrastructure as Code (IaC) using AWS CDK for Cognito, DynamoDB, API Gateway, and Lambda. | 07/27/2026 | 07/27/2026 |
+| Tue | - Set up CI/CD pipeline using GitHub Actions to auto-build Docker and deploy AWS CDK. | 07/28/2026 | 07/28/2026 |
+| Wed | - Write Battle Logic calculation API (damage, critical hits) in C# to prevent cheating. | 07/29/2026 | 07/29/2026 |
+| Thu | - Write APIs handling the Level Up system, Death Penalty feature, and Inventory management. | 07/30/2026 | 07/30/2026 |
+| Fri | - Test game logic algorithms' accuracy and synchronize states to Unity. | 07/31/2026 | 07/31/2026 |
+
+### Achievements:
+
+* Infrastructure deployment is fully automated with AWS CDK and CI/CD.
+* Combat and character upgrade logic operate accurately on the Server.
+* Prevented all cheating behaviors from altering data on the Client side.

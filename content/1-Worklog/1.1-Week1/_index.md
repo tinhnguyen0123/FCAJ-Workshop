@@ -1,6 +1,6 @@
 ---
 title: "Week 1 Worklog"
-date: 2026-08-01
+date: 2026-06-27
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
@@ -8,12 +8,20 @@ pre: " <b> 1.1. </b> "
 
 ### Week 1 Objectives:
 
-* Get acquainted with the company and internship process. Learn AWS basics and select a project topic.
+* Learn AWS basics and initialize project infrastructure (VPC, S3, C# Monorepo).
 
-### Tasks carried out this week (22/06/2026 - 27/06/2026):
-| Day | Task | Start Date | Completion Date | Reference Material |
-| --- | --------- | ------------ | --------------- | ------------------ |
-| 1 | Welcome day: Introduction to the internship company (AWS FCAJ Workforce Bootcamp) and mentor. | 22/06/2026 | 23/06/2026 |  |
-| 2 | Introduction to company rules, working regulations, and internship process. | 22/06/2026 | 23/06/2026 |  |
-| 3 | Learn new knowledge about AWS cloud computing platform and select an internship project topic. | 24/06/2026 | 27/06/2026 |  |
+### Tasks to be carried out this week (06/22/2026 - 06/27/2026):
 
+| Day | Task | Start Date | Completion Date |
+| --- | --- | --- | --- |
+| Mon | - Learn AWS Cloud concepts (EC2, S3, VPC) and set up IAM with least privilege. | 06/22/2026 | 06/22/2026 |
+| Tue | - Initialize Amazon S3 Bucket and upload game graphic assets. | 06/23/2026 | 06/23/2026 |
+| Wed | - Design basic network architecture (VPC, Subnets, Security Groups) for the project. | 06/24/2026 | 06/24/2026 |
+| Thu | - Initialize C# Monorepo project structure and create the GameShared library. | 06/25/2026 | 06/25/2026 |
+| Fri | - Finalize development environment (Unity, AWS CLI) and write initial design documents. | 06/26/2026 | 06/26/2026 |
+
+### Achievements:
+
+* Successfully set up basic network and storage infrastructure on AWS.
+* Completed the C# Monorepo source code boilerplate shared between Backend and Frontend.
+* Mastered AWS account configuration and security.

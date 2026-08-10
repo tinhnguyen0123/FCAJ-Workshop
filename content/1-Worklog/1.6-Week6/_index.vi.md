@@ -8,13 +8,20 @@ pre: " <b> 1.6. </b> "
 
 ### Mục tiêu tuần 6:
 
-* Tích hợp AI vào game và tối ưu hóa hiệu năng hệ thống.
+* Tự động hóa hạ tầng bằng AWS CDK và hoàn thiện Game Logic.
 
 ### Các công việc triển khai trong tuần này (27/07/2026 - 01/08/2026):
-| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
-| --- | --------- | ------------ | --------------- | ------------------ |
-| 1 | Tích hợp Generative AI vào Cốt truyện Game: Kết nối Backend C# với Amazon Bedrock (Claude AI). | 27/07/2026 | 28/07/2026 |  |
-| 2 | Tối ưu hóa Hiệu năng & Giải quyết sự cố Cold Start: Áp dụng Native AOT cho API nhẹ (Get Profile, Inventory). | 29/07/2026 | 29/07/2026 |  |
-| 3 | Cấu hình AWS Lambda SnapStart cho các API xử lý phức tạp nhằm tối ưu tốc độ phản hồi. | 30/07/2026 | 30/07/2026 |  |
-| 4 | Tham gia event Agent Force - Deepdive. | 31/07/2026 | 01/08/2026 |  |
 
+| Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành |
+| --- | --- | --- | --- |
+| T2 | - Viết mã nguồn hạ tầng (IaC) bằng AWS CDK cho Cognito, DynamoDB, API Gateway và Lambda. | 27/07/2026 | 27/07/2026 |
+| T3 | - Thiết lập luồng CI/CD bằng GitHub Actions tự động build Docker và deploy AWS CDK. | 28/07/2026 | 28/07/2026 |
+| T4 | - Viết API tính toán Battle Logic (sát thương, bạo kích) bằng C# để chống gian lận. | 29/07/2026 | 29/07/2026 |
+| T5 | - Viết API xử lý hệ thống Level Up, tính năng Death Penalty và quản lý Túi đồ. | 30/07/2026 | 30/07/2026 |
+| T6 | - Kiểm tra độ chính xác của các thuật toán game logic và đồng bộ trạng thái về Unity. | 31/07/2026 | 31/07/2026 |
+
+### Kết quả đạt được:
+
+* Quá trình triển khai hạ tầng được tự động hóa hoàn toàn với AWS CDK và CI/CD.
+* Logic chiến đấu và nâng cấp nhân vật hoạt động chính xác trên Server.
+* Ngăn chặn mọi hành vi gian lận (cheat) thay đổi dữ liệu từ phía Client.

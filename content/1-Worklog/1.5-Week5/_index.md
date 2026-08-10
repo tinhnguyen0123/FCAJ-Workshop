@@ -1,6 +1,6 @@
 ---
 title: "Week 5 Worklog"
-date: 2026-08-01
+date: 2026-07-25
 weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
@@ -8,13 +8,20 @@ pre: " <b> 1.5. </b> "
 
 ### Week 5 Objectives:
 
-* Build the item system and develop the inventory management backend API.
+* Deploy Serverless Backend and complete Game UI.
 
-### Tasks carried out this week (20/07/2026 - 25/07/2026):
-| Day | Task | Start Date | Completion Date | Reference Material |
-| --- | --------- | ------------ | --------------- | ------------------ |
-| 1 | Build Item Data Structure: Design Data Models for Weapon, Armor, Accessory, Consumable. | 20/07/2026 | 21/07/2026 |  |
-| 2 | Loot System Algorithm: Implement Weighted Random Algorithm for drops and experience. | 22/07/2026 | 22/07/2026 |  |
-| 3 | Develop Inventory Management Backend API: Build AWS Lambda in C# for capacity check. | 23/07/2026 | 23/07/2026 |  |
-| 4 | Process Equip/Unequip logic and automatically update character stats in Amazon DynamoDB. | 24/07/2026 | 25/07/2026 |  |
+### Tasks to be carried out this week (07/20/2026 - 07/25/2026):
 
+| Day | Task | Start Date | Completion Date |
+| --- | --- | --- | --- |
+| Mon | - Refactor .NET 8 Backend into independent AWS Lambda Handlers. | 07/20/2026 | 07/20/2026 |
+| Tue | - Configure Amazon API Gateway as the communication portal to AWS Lambda. | 07/21/2026 | 07/21/2026 |
+| Wed | - Package Backend into Docker Image and deploy to Amazon Elastic Container Registry (ECR). | 07/22/2026 | 07/22/2026 |
+| Thu | - Complete Unity interfaces (MainMenu, StoryView, BattleView, InventoryView). | 07/23/2026 | 07/23/2026 |
+| Fri | - Connect all UI Presenters in Unity to the new Serverless API Gateway system. | 07/24/2026 | 07/24/2026 |
+
+### Achievements:
+
+* Successfully migrated Backend architecture to a flexible Serverless model.
+* Source code is neatly packaged using Docker Images.
+* Full game UI has been completed and fully connected to APIs.

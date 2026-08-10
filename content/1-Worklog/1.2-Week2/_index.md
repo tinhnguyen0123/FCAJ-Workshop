@@ -1,6 +1,6 @@
 ---
 title: "Week 2 Worklog"
-date: 2026-08-01
+date: 2026-07-03
 weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
@@ -8,15 +8,20 @@ pre: " <b> 1.2. </b> "
 
 ### Week 2 Objectives:
 
-* Explore and get familiar with basic AWS services.
+* Integrate authentication system (Cognito) and design Data Transfer Objects (DTOs).
 
-### Tasks carried out this week (29/06/2026 - 03/07/2026):
-| Day | Task | Start Date | Completion Date | Reference Material |
-| --- | --------- | ------------ | --------------- | ------------------ |
-| 1 | Create AWS account and manage costs with AWS Budgets. | 29/06/2026 | 29/06/2026 |  |
-| 2 | Security and Identity: Manage access with IAM, IAM Roles for EC2. | 30/06/2026 | 30/06/2026 |  |
-| 3 | Networking: Basics of Amazon VPC, AWS Route 53 (Hybrid DNS), CloudFront. | 01/07/2026 | 01/07/2026 |  |
-| 4 | Compute and Containers: Amazon EC2, EC2 Auto Scaling, AWS Cloud9. | 01/07/2026 | 01/07/2026 |  |
-| 5 | Storage and Database: S3 Static Website Hosting, Amazon RDS, Amazon DynamoDB. | 02/07/2026 | 02/07/2026 |  |
-| 6 | Management and Governance: Amazon CloudWatch, AWS CLI. | 03/07/2026 | 03/07/2026 |  |
+### Tasks to be carried out this week (06/29/2026 - 07/04/2026):
 
+| Day | Task | Start Date | Completion Date |
+| --- | --- | --- | --- |
+| Mon | - Initialize Amazon Cognito (User Pool, App Client) for the user authentication system. | 06/29/2026 | 06/29/2026 |
+| Tue | - Program Login/Register APIs and handle JWT Token (Access/Refresh) issuance. | 06/30/2026 | 06/30/2026 |
+| Wed | - Design DTOs (Character, Battle, Inventory) in the GameShared library. | 07/01/2026 | 07/01/2026 |
+| Thu | - Configure JSON serialization for DTOs to synchronize data between Backend and Unity. | 07/02/2026 | 07/02/2026 |
+| Fri | - Design basic UI in Unity and integrate the Cognito authentication flow into the game. | 07/03/2026 | 07/03/2026 |
+
+### Achievements:
+
+* Successfully built a secure Login/Register system with Amazon Cognito.
+* Unified communication data structures (DTOs) between Client and Server.
+* The Unity game can now log in and maintain active sessions.
