@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Project Proposal: AI Dungeon RPG Adventure
+# AI Dungeon RPG Adventure
 
 ## 1. Project Overview
 The **AI Dungeon RPG Adventure** introduces a revolutionary approach to the 2D Role-Playing Game genre. By combining the vast potential of Generative AI with the robustness of AWS Serverless computing, this project delivers an experience that genuinely evolves with the player.

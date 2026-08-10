@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Bản Đề Xuất: Trò Chơi Nhập Vai Khám Phá Hầm Ngục AI
+# Trò Chơi Nhập Vai Khám Phá Hầm Ngục AI
 
 ## 1. Giới thiệu tổng quan
 Dự án mang đến một làn gió mới cho dòng game phiêu lưu nhập vai (RPG) 2D bằng cách ứng dụng Trí tuệ Nhân tạo tạo sinh (Generative AI) vào việc xây dựng kịch bản. Thay vì phụ thuộc vào một máy chủ truyền thống nặng nề, hệ thống được vận hành hoàn toàn trên nền tảng AWS Serverless.
@@ -27,7 +27,7 @@ Người chơi có thể tự do tạo hình nhân vật và dấn thân vào nh
 
 Dự án áp dụng mô hình 100% Serverless trên AWS, tách bạch rõ ràng giữa phần Game Client và Backend để tối đa hóa tính bảo mật cũng như hiệu năng.
 
-![AWS Architecture Diagram](images/aws-architecture.png)
+![Sơ đồ kiến trúc dự án](images/aws-architecture.png)
 *(Sơ đồ kiến trúc tổng thể của dự án)*
 
 *   **Amazon API Gateway & Cognito:** Đóng vai trò là cửa ngõ bảo mật, quản lý luồng đăng nhập, đăng ký và cấp quyền truy cập (JWT Token) cho người chơi. Mọi thao tác gọi API đều phải đi qua chốt chặn này.
