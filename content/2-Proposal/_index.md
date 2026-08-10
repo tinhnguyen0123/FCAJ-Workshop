@@ -1,112 +1,72 @@
 ---
 title: "Proposal"
-date: 2024-01-01
+date: 2026-08-10
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
 
-In this section, I will to summarize the contents of the workshop that I **plan** to conduct.
+# Project Proposal: AI Dungeon RPG Adventure
 
-# IoT Weather Platform for Lab Research
-## A Unified AWS Serverless Solution for Real-Time Weather Monitoring
+## 1. Project Overview
+The **AI Dungeon RPG Adventure** introduces a revolutionary approach to the 2D Role-Playing Game genre. By combining the vast potential of Generative AI with the robustness of AWS Serverless computing, this project delivers an experience that genuinely evolves with the player.
 
-### 1. Executive Summary
-The IoT Weather Platform is designed for the ITea Lab team in Ho Chi Minh City to enhance weather data collection and analysis. It supports up to 5 weather stations, with potential scalability to 10-15, utilizing Raspberry Pi edge devices with ESP32 sensors to transmit data via MQTT. The platform leverages AWS Serverless services to deliver real-time monitoring, predictive analytics, and cost efficiency, with access restricted to 5 lab members via Amazon Cognito.
+Players are empowered to create their own avatars and dive into uncharted journeys where storylines, environmental obstacles, and turn-based Boss fights are dynamically generated via **AWS Bedrock**. The entire visual experience is seamlessly rendered on a **Unity 2D Client**, which communicates with a powerful, event-driven **.NET 8 Backend** hosted securely on AWS.
 
-### 2. Problem Statement
-### What’s the Problem?
-Current weather stations require manual data collection, becoming unmanageable with multiple units. There is no centralized system for real-time data or analytics, and third-party platforms are costly and overly complex.
+## 2. Challenges and Proposed Solutions
 
-### The Solution
-The platform uses AWS IoT Core to ingest MQTT data, AWS Lambda and API Gateway for processing, Amazon S3 for storage (including a data lake), and AWS Glue Crawlers and ETL jobs to extract, transform, and load data from the S3 data lake to another S3 bucket for analysis. AWS Amplify with Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to Thingsboard and CoreIoT, users can register new devices and manage connections, though this platform operates on a smaller scale and is designed for private use. Key features include real-time dashboards, trend analysis, and low operational costs.
+### Limitations of Current RPGs
+*   **Predictable and Static Content:** Most RPGs rely on pre-written, branching dialogues. No matter how expansive the game is, players will eventually exhaust the content, leading to a repetitive and predictable experience.
+*   **High Infrastructure Costs:** Maintaining traditional stateful game servers requires a massive budget for idle resources, and they often struggle to scale seamlessly during unpredictable traffic spikes.
 
-### Benefits and Return on Investment
-The solution establishes a foundational resource for lab members to develop a larger IoT platform, serving as a study resource, and provides a data foundation for AI enthusiasts for model training or analysis. It reduces manual reporting for each station via a centralized platform, simplifying management and maintenance, and improves data reliability. Monthly costs are $0.66 USD per the AWS Pricing Calculator, with a 12-month total of $7.92 USD. All IoT equipment costs are covered by the existing weather station setup, eliminating additional development expenses. The break-even period of 6-12 months is achieved through significant time savings from reduced manual work.
+### Our Innovative Approach
+*   **Endless AI-Generated Narrative:** By utilizing Large Language Models (LLMs) through **AWS Bedrock**, the game constantly spins up fresh scenarios, environments, and outcomes in response to the player’s unique actions.
+*   **Serverless Cost-Efficiency:** Essential game mechanics—such as user authentication, inventory tracking, and combat resolution—are offloaded to **AWS Lambda** and **Amazon DynamoDB**. This ensures the game scales automatically to meet demand while strictly adhering to a cost-effective Pay-as-you-go model.
 
-### 3. Solution Architecture
-The platform employs a serverless AWS architecture to manage data from 5 Raspberry Pi-based stations, scalable to 15. Data is ingested via AWS IoT Core, stored in an S3 data lake, and processed by AWS Glue Crawlers and ETL jobs to transform and load it into another S3 bucket for analysis. Lambda and API Gateway handle additional processing, while Amplify with Next.js hosts the dashboard, secured by Cognito. The architecture is detailed below:
+## 3. Architecture Overview
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
+This project relies entirely on an AWS Serverless architecture, maintaining a strict boundary between the Game Client and the Backend to optimize both security and responsiveness.
 
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+![AWS Architecture Diagram](images/aws-architecture.png)
+*(High-Level Architecture Diagram)*
 
-### AWS Services Used
-- **AWS IoT Core**: Ingests MQTT data from 5 stations, scalable to 15.
-- **AWS Lambda**: Processes data and triggers Glue jobs (two functions).
-- **Amazon API Gateway**: Facilitates web app communication.
-- **Amazon S3**: Stores raw data in a data lake and processed outputs (two buckets).
-- **AWS Glue**: Crawlers catalog data, and ETL jobs transform and load it.
-- **AWS Amplify**: Hosts the Next.js web interface.
-- **Amazon Cognito**: Secures access for lab users.
+*   **Amazon API Gateway & Cognito:** Acts as the secure front door, managing user registrations, logins, and JWT Token validation for all incoming API calls.
+*   **Processing Tier (AWS Lambda - .NET 8):** Contains distributed functions that execute critical game logic, including character state updates, turn-based battle mechanics, inventory changes, and interfacing with AI services.
+*   **Storage Tier (Amazon DynamoDB):** A high-speed NoSQL database that stores the game’s configurations, item databases, and live player sessions with ultra-low latency.
+*   **AWS Bedrock:** The imaginative engine of the game, taking contextual prompts and generating interactive story events on the fly.
 
-### Component Design
-- **Edge Devices**: Raspberry Pi collects and filters sensor data, sending it to IoT Core.
-- **Data Ingestion**: AWS IoT Core receives MQTT messages from the edge devices.
-- **Data Storage**: Raw data is stored in an S3 data lake; processed data is stored in another S3 bucket.
-- **Data Processing**: AWS Glue Crawlers catalog the data, and ETL jobs transform it for analysis.
-- **Web Interface**: AWS Amplify hosts a Next.js app for real-time dashboards and analytics.
-- **User Management**: Amazon Cognito manages user access, allowing up to 5 active accounts.
+## 4. Technology Stack & Implementation
 
-### 4. Technical Implementation
-**Implementation Phases**
-This project has two parts—setting up weather edge stations and building the weather platform—each following 4 phases:
-- Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship)
-- Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed (Month 1).
-- Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., optimize Lambda with Next.js) to stay cost-effective and usable (Month 2).
-- Develop, Test, and Deploy: Code the Raspberry Pi setup, AWS services with CDK/SDK, and Next.js app, then test and release to production (Months 2-3).
+The development follows a **Monorepo** strategy, allowing the C# Unity Client and the C# Lambda Backend to seamlessly share Domain Models and Data Transfer Objects (DTOs).
+*   **Client Application:** Built in Unity (C#) using the 2D Universal Render Pipeline (URP), ensuring crisp visuals while fetching data via RESTful APIs.
+*   **Infrastructure as Code (IaC):** The complete AWS setup is scripted using the **AWS CDK (C#)**. This guarantees that deployments across various environments (Development, Production) are fast, consistent, and easily reproducible.
+*   **Security Model:** Adopts a Server-Authoritative approach. To prevent client-side manipulation, all vital calculations (such as health deductions, damage dealt, and item acquisition) are securely executed on AWS Lambda.
 
-**Technical Requirements**
-- Weather Edge Station: Sensors (temperature, humidity, rainfall, wind speed), a microcontroller (ESP32), and a Raspberry Pi as the edge device. Raspberry Pi runs Raspbian, handles Docker for filtering, and sends 1 MB/day per station via MQTT over Wi-Fi.
-- Weather Platform: Practical knowledge of AWS Amplify (hosting Next.js), Lambda (minimal use due to Next.js), AWS Glue (ETL), S3 (two buckets), IoT Core (gateway and rules), and Cognito (5 users). Use AWS CDK/SDK to code interactions (e.g., IoT Core rules to S3). Next.js reduces Lambda workload for the fullstack web app.
+## 5. Development Roadmap
 
-### 5. Timeline & Milestones
-**Project Timeline**
-- Pre-Internship (Month 0): 1 month for planning and old station review.
-- Internship (Months 1-3): 3 months.
-    - Month 1: Study AWS and upgrade hardware.
-    - Month 2: Design and adjust architecture.
-    - Month 3: Implement, test, and launch.
-- Post-Launch: Up to 1 year for research.
+*   **Phase 1 (22/06/2026 - 05/07/2026):** Lock in the overall architecture, set up the AWS CDK project, and successfully roll out Amazon Cognito and the DynamoDB tables.
+*   **Phase 2 (06/07/2026 - 19/07/2026):** Integrate AWS Bedrock. Construct intelligent `Prompt Builders` to feed context to the AI, and implement a JSON `Response Parser` to decode AI outputs into playable game logic.
+*   **Phase 3 (20/07/2026 - 02/08/2026):** Finalize the backend functionalities, specifically focusing on the Turn-based Combat system, Boss spawning logic, and Inventory management.
+*   **Phase 4 (03/08/2026 - 15/08/2026):** Connect the Unity Client to the Backend APIs. Perform rigorous End-to-End (E2E) testing and fine-tune the AI response times.
 
-### 6. Budget Estimation
-You can find the budget estimation on the [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).  
-Or you can download the [Budget Estimation File](../attachments/budget_estimation.pdf).
+## 6. Budget & Cost Analysis
 
-### Infrastructure Costs
-- AWS Services:
-    - AWS Lambda: $0.00/month (1,000 requests, 512 MB storage).
-    - S3 Standard: $0.15/month (6 GB, 2,100 requests, 1 GB scanned).
-    - Data Transfer: $0.02/month (1 GB inbound, 1 GB outbound).
-    - AWS Amplify: $0.35/month (256 MB, 500 ms requests).
-    - Amazon API Gateway: $0.01/month (2,000 requests).
-    - AWS Glue ETL Jobs: $0.02/month (2 DPUs).
-    - AWS Glue Crawlers: $0.07/month (1 crawler).
-    - MQTT (IoT Core): $0.08/month (5 devices, 45,000 messages).
+One of the most compelling aspects of this Serverless design is the ability to maximize the AWS Free Tier, keeping development costs incredibly low:
+*   **AWS Cognito / Lambda / DynamoDB:** $0.00 (Easily stays within free tier thresholds).
+*   **AWS Bedrock:** Billed based on token consumption (Projected around $1.00 - $5.00/month during the testing phase).
+*   **Amazon API Gateway & CloudWatch:** Approximately $0.50 - $1.00/month.
+*   **Total Estimated Budget:** **~$1.50 - $6.00 / month**. A remarkably low cost for a scalable multiplayer backend system.
 
-Total: $0.7/month, $8.40/12 months
+## 7. Risk Management
 
-- Hardware: $265 one-time (Raspberry Pi 5 and sensors).
+| Potential Risk | Severity | Mitigation Plan |
+| :--- | :--- | :--- |
+| **High AI Latency** | High | Design immersive "typing" or "loading" animations on the Unity Client to keep the player engaged while waiting for API responses. |
+| **Invalid JSON from AI** | Medium | Implement strict Validator Modules on the Backend, complete with automatic Fallback and Retry loops in case the AI outputs corrupted data. |
+| **Token Cost Spikes** | Low | Enforce hard `max_tokens` caps on every Bedrock request and deploy AWS Budgets to send immediate alerts if spending increases. |
 
-### 7. Risk Assessment
-#### Risk Matrix
-- Network Outages: Medium impact, medium probability.
-- Sensor Failures: High impact, low probability.
-- Cost Overruns: Medium impact, low probability.
+## 8. Final Objectives
 
-#### Mitigation Strategies
-- Network: Local storage on Raspberry Pi with Docker.
-- Sensors: Regular checks and spares.
-- Cost: AWS budget alerts and optimization.
-
-#### Contingency Plans
-- Revert to manual methods if AWS fails.
-- Use CloudFormation for cost-related rollbacks.
-
-### 8. Expected Outcomes
-#### Technical Improvements: 
-Real-time data and analytics replace manual processes.  
-Scalable to 10-15 stations.
-#### Long-term Value
-1-year data foundation for AI research.  
-Reusable for future projects.
+*   **A Groundbreaking Game Experience:** Provide players with an eternally fresh RPG experience, driven entirely by Generative AI.
+*   **A Reusable Architecture Blueprint:** Establish a highly dependable framework bridging Unity and an AWS .NET 8 Serverless backend, which can be reused for future cloud-native games or complex interactive applications.
+*   **Cost-Efficient Scalability:** Demonstrate the feasibility of launching and managing a robust multiplayer game environment with almost zero upfront infrastructure costs.
