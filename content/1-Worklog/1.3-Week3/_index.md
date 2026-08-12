@@ -18,7 +18,7 @@ pre: " <b> 1.3. </b> "
 | Tuesday | - Write C# Repository classes for CRUD operations on game data. | 07/07/2026 | 07/07/2026 |
 | Wednesday | - Learn UI Presenter architecture and build display layouts in Unity. | 07/08/2026 | 07/08/2026 |
 | Thursday | - Write ApiClient class in Unity using UnityWebRequest to call APIs asynchronously. | 07/09/2026 | 07/09/2026 |
-| Friday | - Build UI components handling Loading states (Spinner) and error popups. | 07/10/2026 | 07/10/2026 |
+| Friday | - Build UI components handling Loading states (Spinner) and error popups. | 07/10/2026 | 07/11/2026 |
 
 ### Achievements:
 

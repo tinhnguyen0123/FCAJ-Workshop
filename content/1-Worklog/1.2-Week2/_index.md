@@ -18,7 +18,7 @@ pre: " <b> 1.2. </b> "
 | Tuesday | - Program Login/Register APIs and handle JWT Token (Access/Refresh) issuance. | 06/30/2026 | 06/30/2026 |
 | Wednesday | - Design DTOs (Character, Battle, Inventory) in the GameShared library. | 07/01/2026 | 07/01/2026 |
 | Thursday | - Configure JSON serialization for DTOs to synchronize data between Backend and Unity. | 07/02/2026 | 07/02/2026 |
-| Friday | - Design basic UI in Unity and integrate the Cognito authentication flow into the game. | 07/03/2026 | 07/03/2026 |
+| Friday | - Design basic UI in Unity and integrate the Cognito authentication flow into the game. | 07/03/2026 | 07/04/2026 |
 
 ### Achievements:
 

@@ -18,7 +18,7 @@ pre: " <b> 1.2. </b> "
 | Thứ 3 | - Lập trình API Đăng nhập/Đăng ký và xử lý cấp phát JWT Tokens (Access/Refresh Token). | 30/06/2026 | 30/06/2026 |
 | Thứ 4 | - Thiết kế các DTOs (Character, Battle, Inventory) trong thư viện GameShared. | 01/07/2026 | 01/07/2026 |
 | Thứ 5 | - Cấu hình serialization JSON cho các DTOs để đồng bộ dữ liệu giữa Backend và Unity. | 02/07/2026 | 02/07/2026 |
-| Thứ 6 | - Thiết kế giao diện UI cơ bản trên Unity và tích hợp luồng xác thực Cognito vào game. | 03/07/2026 | 03/07/2026 |
+| Thứ 6 | - Thiết kế giao diện UI cơ bản trên Unity và tích hợp luồng xác thực Cognito vào game. | 03/07/2026 | 04/07/2026 |
 
 ### Kết quả đạt được:
 

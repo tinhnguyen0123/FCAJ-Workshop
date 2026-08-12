@@ -18,7 +18,7 @@ pre: " <b> 1.1. </b> "
 | Tuesday | - Initialize Amazon S3 Bucket and upload game graphic assets. | 06/23/2026 | 06/23/2026 |
 | Wednesday | - Design basic network architecture (VPC, Subnets, Security Groups) for the project. | 06/24/2026 | 06/24/2026 |
 | Thursday | - Initialize C# Monorepo project structure and create the GameShared library. | 06/25/2026 | 06/25/2026 |
-| Friday | - Finalize development environment (Unity, AWS CLI) and write initial design documents. | 06/26/2026 | 06/26/2026 |
+| Friday | - Finalize development environment (Unity, AWS CLI) and write initial design documents. | 06/26/2026 | 06/27/2026 |
 
 ### Achievements:
 

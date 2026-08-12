@@ -14,7 +14,7 @@ pre: " <b> 1.6. </b> "
 
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành |
 | --- | --- | --- | --- |
-| Thứ 2 | - Viết mã nguồn hạ tầng (IaC) bằng AWS CDK cho Cognito, DynamoDB, API Gateway và Lambda. | 27/07/2026 | 27/07/2026 |
+| Thứ 2 | - Viết mã nguồn hạ tầng (IaC) bằng AWS CDK cho Cognito, DynamoDB, API Gateway và Lambda. | 27/07/2026 | 28/07/2026 |
 | Thứ 3 | - Thiết lập luồng CI/CD bằng GitHub Actions tự động build Docker và deploy AWS CDK. | 28/07/2026 | 28/07/2026 |
 | Thứ 4 | - Viết API tính toán Battle Logic (sát thương, bạo kích) bằng C# để chống gian lận. | 29/07/2026 | 29/07/2026 |
 | Thứ 5 | - Viết API xử lý hệ thống Level Up, tính năng Death Penalty và quản lý Túi đồ. | 30/07/2026 | 30/07/2026 |

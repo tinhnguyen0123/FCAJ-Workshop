@@ -16,7 +16,7 @@ pre: " <b> 1.4. </b> "
 | --- | --- | --- | --- |
 | Thứ 2 | - Tìm hiểu dịch vụ Amazon Bedrock (Claude LLM) và cấu hình quyền IAM tương ứng. | 13/07/2026 | 13/07/2026 |
 | Thứ 3 | - Viết mô-đun PromptBuilder kết hợp thông tin nhân vật và lịch sử người chơi. | 14/07/2026 | 14/07/2026 |
-| Thứ 4 | - Tích hợp AWS SDK để gọi Bedrock API trực tiếp từ mã nguồn C# Backend. | 15/07/2026 | 15/07/2026 |
+| Thứ 4 | - Tích hợp AWS SDK để gọi Bedrock API trực tiếp từ mã nguồn C# Backend. | 15/07/2026 | 16/07/2026 |
 | Thứ 5 | - Viết logic ép kiểu và parse định dạng JSON trả về từ AI thành dữ liệu cấu trúc. | 16/07/2026 | 16/07/2026 |
 | Thứ 6 | - Tích hợp dữ liệu cốt truyện AI vào giao diện AI Storyteller trên Unity Client. | 17/07/2026 | 17/07/2026 |
 
