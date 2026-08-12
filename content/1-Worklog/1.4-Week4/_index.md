@@ -17,8 +17,8 @@ pre: " <b> 1.4. </b> "
 | Monday | - Learn Amazon Bedrock service (Claude LLM) and configure corresponding IAM permissions. | 07/13/2026 | 07/13/2026 |
 | Tuesday | - Write PromptBuilder module combining character info and player history. | 07/14/2026 | 07/14/2026 |
 | Wednesday | - Integrate AWS SDK to call Bedrock API directly from C# Backend source code. | 07/15/2026 | 07/16/2026 |
-| Thursday | - Write logic to parse JSON formats returned by AI into structured data. | 07/16/2026 | 07/16/2026 |
-| Friday | - Integrate AI story data into the AI Storyteller UI on the Unity Client. | 07/17/2026 | 07/17/2026 |
+| Thursday | - Write logic to parse JSON formats returned by AI into structured data. | 07/16/2026 | 07/17/2026 |
+| Friday | - Integrate AI story data into the AI Storyteller UI on the Unity Client. | 07/17/2026 | 07/18/2026 |
 
 ### Achievements:
 

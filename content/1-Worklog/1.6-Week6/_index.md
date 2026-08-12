@@ -16,9 +16,9 @@ pre: " <b> 1.6. </b> "
 | --- | --- | --- | --- |
 | Monday | - Write Infrastructure as Code (IaC) using AWS CDK for Cognito, DynamoDB, API Gateway, and Lambda. | 07/27/2026 | 07/28/2026 |
 | Tuesday | - Set up CI/CD pipeline using GitHub Actions to auto-build Docker and deploy AWS CDK. | 07/28/2026 | 07/28/2026 |
-| Wednesday | - Write Battle Logic calculation API (damage, critical hits) in C# to prevent cheating. | 07/29/2026 | 07/29/2026 |
-| Thursday | - Write APIs handling the Level Up system, Death Penalty feature, and Inventory management. | 07/30/2026 | 07/30/2026 |
-| Friday | - Test game logic algorithms' accuracy and synchronize states to Unity. | 07/31/2026 | 07/31/2026 |
+| Wednesday | - Write Battle Logic calculation API (damage, critical hits) in C# to prevent cheating. | 07/29/2026 | 07/30/2026 |
+| Thursday | - Write APIs handling the Level Up system, Death Penalty feature, and Inventory management. | 07/30/2026 | 07/31/2026 |
+| Friday | - Test game logic algorithms' accuracy and synchronize states to Unity. | 01/08/2026 | 01/08/2026 |
 
 ### Achievements:
 
