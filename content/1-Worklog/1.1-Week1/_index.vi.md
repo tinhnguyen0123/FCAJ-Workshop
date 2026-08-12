@@ -14,11 +14,11 @@ pre: " <b> 1.1. </b> "
 
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành |
 | --- | --- | --- | --- |
-| T2 | - Học các kiến thức AWS Cloud (EC2, S3, VPC) và thiết lập IAM với đặc quyền tối thiểu. | 22/06/2026 | 22/06/2026 |
-| T3 | - Khởi tạo Amazon S3 Bucket và upload các tài nguyên đồ họa (assets) của game. | 23/06/2026 | 23/06/2026 |
-| T4 | - Thiết kế kiến trúc mạng (VPC, Subnets, Security Groups) cơ bản cho dự án. | 24/06/2026 | 24/06/2026 |
-| T5 | - Khởi tạo cấu trúc dự án C# Monorepo và tạo thư viện dùng chung GameShared. | 25/06/2026 | 25/06/2026 |
-| T6 | - Hoàn thiện môi trường phát triển (Unity, AWS CLI) và viết tài liệu thiết kế ban đầu. | 26/06/2026 | 26/06/2026 |
+| Thứ 2 | - Học các kiến thức AWS Cloud (EC2, S3, VPC) và thiết lập IAM với đặc quyền tối thiểu. | 22/06/2026 | 22/06/2026 |
+| Thứ 3 | - Khởi tạo Amazon S3 Bucket và upload các tài nguyên đồ họa (assets) của game. | 23/06/2026 | 23/06/2026 |
+| Thứ 4 | - Thiết kế kiến trúc mạng (VPC, Subnets, Security Groups) cơ bản cho dự án. | 24/06/2026 | 24/06/2026 |
+| Thứ 5 | - Khởi tạo cấu trúc dự án C# Monorepo và tạo thư viện dùng chung GameShared. | 25/06/2026 | 25/06/2026 |
+| Thứ 6 | - Hoàn thiện môi trường phát triển (Unity, AWS CLI) và viết tài liệu thiết kế ban đầu. | 26/06/2026 | 26/06/2026 |
 
 ### Kết quả đạt được:
 

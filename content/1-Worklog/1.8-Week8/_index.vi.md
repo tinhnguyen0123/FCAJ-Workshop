@@ -14,11 +14,11 @@ pre: " <b> 1.8. </b> "
 
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành |
 | --- | --- | --- | --- |
-| T2 | - Xử lý dứt điểm các lỗi phát sinh (bugs) và tối ưu hóa chi phí các tài nguyên AWS thừa. | 10/08/2026 | 11/08/2026 |
-| T3 | - Tiếp tục xử lý lỗi còn tồn đọng. | 11/08/2026 | 11/08/2026 |
-| T4 | - Đóng gói toàn bộ mã nguồn (Frontend Unity + Backend CDK) và viết tài liệu README. | 12/08/2026 | 12/08/2026 |
-| T5 | - Soạn thảo Báo cáo thực tập cá nhân, tổng hợp số liệu kỹ thuật và kết quả đạt được. | 13/08/2026 | 15/08/2026 |
-| T6 | - Đóng gói toàn bộ file bản mềm và nộp lên hệ thống chấm điểm của công ty. | 15/08/2026 | 15/08/2026 |
+| Thứ 2 | - Xử lý dứt điểm các lỗi phát sinh (bugs) và tối ưu hóa chi phí các tài nguyên AWS thừa. | 10/08/2026 | 11/08/2026 |
+| Thứ 3 | - Tiếp tục xử lý lỗi còn tồn đọng. | 11/08/2026 | 11/08/2026 |
+| Thứ 4 | - Đóng gói toàn bộ mã nguồn (Frontend Unity + Backend CDK) và viết tài liệu README. | 12/08/2026 | 12/08/2026 |
+| Thứ 5 | - Soạn thảo Báo cáo thực tập cá nhân, tổng hợp số liệu kỹ thuật và kết quả đạt được. | 13/08/2026 | 15/08/2026 |
+| Thứ 6 | - Đóng gói toàn bộ file bản mềm và nộp lên hệ thống chấm điểm của công ty. | 15/08/2026 | 15/08/2026 |
 
 ### Kết quả đạt được:
 

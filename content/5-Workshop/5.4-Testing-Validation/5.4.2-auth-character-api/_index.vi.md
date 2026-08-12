@@ -1,18 +1,18 @@
 ---
-title : "Kiểm thử API Xác thực & Nhân vật"
+title : "Authentication & Character APIs"
 date : 2024-01-01
 weight : 2
 chapter : false
 pre : " <b> 5.4.2 </b> "
 ---
 
-#### Kiểm thử Xác thực & Khởi tạo Nhân vật
+#### Kiểm thử Authentication & Tạo Nhân vật
 
-Trong bước này, bạn sẽ kiểm thử đăng ký, đăng nhập người dùng, lấy JWT token từ Amazon Cognito và tạo mới một nhân vật RPG.
+Trong bước này, bạn sẽ kiểm thử đăng ký người dùng, đăng nhập, lấy JWT token từ Amazon Cognito và tạo mới một nhân vật RPG.
 
 ---
 
-#### 1. Đăng ký Tài khoản (`POST /auth/register`)
+#### 1. Đăng ký Người dùng (`POST /auth/register`)
 
 - **Request Body:**
   ```json
@@ -22,7 +22,7 @@ Trong bước này, bạn sẽ kiểm thử đăng ký, đăng nhập người d
     "email": "player1@example.com"
   }
   ```
-- **Phản hồi mong đợi (200 OK):**
+- **Expected Response (200 OK):**
   ```json
   {
     "success": true,
@@ -39,9 +39,11 @@ Trong bước này, bạn sẽ kiểm thử đăng ký, đăng nhập người d
   }
   ```
 
+> **Lưu ý**: `errorCode: "USER_NOT_CONFIRMED"` là hành vi bình thường. AWS Cognito gửi email xác minh đến địa chỉ đã đăng ký. Xác nhận người dùng qua **Cognito Console** (*User Pools → Users → Confirm User*) trước khi thực hiện Đăng nhập.
+
 ---
 
-#### 2. Đăng nhập Tài khoản (`POST /auth/login`)
+#### 2. Đăng nhập Người dùng (`POST /auth/login`)
 
 - **Request Body:**
   ```json
@@ -50,7 +52,7 @@ Trong bước này, bạn sẽ kiểm thử đăng ký, đăng nhập người d
     "password": "Password123!"
   }
   ```
-- **Phản hồi mong đợi (200 OK):**
+- **Expected Response (200 OK):**
   ```json
   {
     "success": true,
@@ -67,6 +69,19 @@ Trong bước này, bạn sẽ kiểm thử đăng ký, đăng nhập người d
   }
   ```
 
+  Lưu giá trị `token` (Access Token) vào biến `{{ID_TOKEN}}` trong Postman environment để dùng cho các request tiếp theo.
+
+**Tham khảo Unity Client Code** (`Assets/Scripts/API/AuthApiService.cs`):
+```csharp
+public async Task<LoginResponseData> LoginAsync(string username, string password)
+{
+    var body = new LoginRequestData { username = username, password = password };
+    string json = await ApiClient.Instance.PostRawAsync("/auth/login", JsonUtility.ToJson(body));
+    if (json == null) return null;
+    return JsonUtility.FromJson<LoginResponseData>(json);
+}
+```
+
 ---
 
 #### 3. Tạo Nhân vật RPG (`POST /character`)
@@ -79,7 +94,7 @@ Trong bước này, bạn sẽ kiểm thử đăng ký, đăng nhập người d
     "className": "Paladin"
   }
   ```
-- **Phản hồi mong đợi (201 Created):**
+- **Expected Response (201 Created):**
   ```json
   {
     "success": true,
@@ -102,3 +117,14 @@ Trong bước này, bạn sẽ kiểm thử đăng ký, đăng nhập người d
     }
   }
   ```
+
+  Lưu lại `characterId` — bạn sẽ cần dùng cho các API call Story và Battle.
+
+**Tham khảo Unity Client Code** (`Assets/Scripts/API/CharacterApiService.cs`):
+```csharp
+public async Task<string> CreateCharacterAsync(string userId, string name, string className)
+{
+    var body = JsonUtility.ToJson(new CreateBody { userId = userId, name = name, className = className });
+    return await ApiClient.Instance.PostRawAsync("/character", body);
+}
+```

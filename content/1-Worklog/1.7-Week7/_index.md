@@ -14,11 +14,11 @@ pre: " <b> 1.7. </b> "
 
 | Day | Task | Start Date | Completion Date |
 | --- | --- | --- | --- |
-| Mon | - Move sensitive information (API Keys) into AWS Secrets Manager instead of hardcoding. | 08/03/2026 | 08/03/2026 |
-| Tue | - Set up Amazon CloudWatch Dashboard to monitor API latency and request volumes. | 08/04/2026 | 08/04/2026 |
-| Wed | - Program Fallback mechanism to return default stories when AI Bedrock times out. | 08/05/2026 | 08/05/2026 |
-| Thu | - Add transition effects and damage animations (Floating Text) to enhance Unity UI. | 08/06/2026 | 08/07/2026 |
-| Fri | - Run End-to-End tests on the entire game loop (Story -> Battle -> Reward) to find bugs. | 08/08/2026 | 08/08/2026 |
+| Monday | - Move sensitive information (API Keys) into AWS Secrets Manager instead of hardcoding. | 08/03/2026 | 08/03/2026 |
+| Tuesday | - Set up Amazon CloudWatch Dashboard to monitor API latency and request volumes. | 08/04/2026 | 08/04/2026 |
+| Wednesday | - Program Fallback mechanism to return default stories when AI Bedrock times out. | 08/05/2026 | 08/05/2026 |
+| Thursday | - Add transition effects and damage animations (Floating Text) to enhance Unity UI. | 08/06/2026 | 08/07/2026 |
+| Friday | - Run End-to-End tests on the entire game loop (Story -> Battle -> Reward) to find bugs. | 08/08/2026 | 08/08/2026 |
 
 ### Achievements:
 

@@ -14,11 +14,11 @@ pre: " <b> 1.2. </b> "
 
 | Day | Task | Start Date | Completion Date |
 | --- | --- | --- | --- |
-| Mon | - Initialize Amazon Cognito (User Pool, App Client) for the user authentication system. | 06/29/2026 | 06/29/2026 |
-| Tue | - Program Login/Register APIs and handle JWT Token (Access/Refresh) issuance. | 06/30/2026 | 06/30/2026 |
-| Wed | - Design DTOs (Character, Battle, Inventory) in the GameShared library. | 07/01/2026 | 07/01/2026 |
-| Thu | - Configure JSON serialization for DTOs to synchronize data between Backend and Unity. | 07/02/2026 | 07/02/2026 |
-| Fri | - Design basic UI in Unity and integrate the Cognito authentication flow into the game. | 07/03/2026 | 07/03/2026 |
+| Monday | - Initialize Amazon Cognito (User Pool, App Client) for the user authentication system. | 06/29/2026 | 06/29/2026 |
+| Tuesday | - Program Login/Register APIs and handle JWT Token (Access/Refresh) issuance. | 06/30/2026 | 06/30/2026 |
+| Wednesday | - Design DTOs (Character, Battle, Inventory) in the GameShared library. | 07/01/2026 | 07/01/2026 |
+| Thursday | - Configure JSON serialization for DTOs to synchronize data between Backend and Unity. | 07/02/2026 | 07/02/2026 |
+| Friday | - Design basic UI in Unity and integrate the Cognito authentication flow into the game. | 07/03/2026 | 07/03/2026 |
 
 ### Achievements:
 

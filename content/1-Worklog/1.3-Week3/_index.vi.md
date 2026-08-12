@@ -14,11 +14,11 @@ pre: " <b> 1.3. </b> "
 
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành |
 | --- | --- | --- | --- |
-| T2 | - Phân tích cấu trúc bảng và thiết lập Amazon DynamoDB trên AWS Console. | 06/07/2026 | 06/07/2026 |
-| T3 | - Viết các class Repository (C#) để thao tác CRUD với dữ liệu game. | 07/07/2026 | 07/07/2026 |
-| T4 | - Tìm hiểu mô hình kiến trúc UI Presenter và xây dựng Layout hiển thị trên Unity. | 08/07/2026 | 08/07/2026 |
-| T5 | - Viết class ApiClient trong Unity dùng UnityWebRequest để gọi API bất đồng bộ. | 09/07/2026 | 09/07/2026 |
-| T6 | - Xây dựng các thành phần UI xử lý trạng thái Loading (Spinner) và popup báo lỗi. | 10/07/2026 | 10/07/2026 |
+| Thứ 2 | - Phân tích cấu trúc bảng và thiết lập Amazon DynamoDB trên AWS Console. | 06/07/2026 | 06/07/2026 |
+| Thứ 3 | - Viết các class Repository (C#) để thao tác CRUD với dữ liệu game. | 07/07/2026 | 07/07/2026 |
+| Thứ 4 | - Tìm hiểu mô hình kiến trúc UI Presenter và xây dựng Layout hiển thị trên Unity. | 08/07/2026 | 08/07/2026 |
+| Thứ 5 | - Viết class ApiClient trong Unity dùng UnityWebRequest để gọi API bất đồng bộ. | 09/07/2026 | 09/07/2026 |
+| Thứ 6 | - Xây dựng các thành phần UI xử lý trạng thái Loading (Spinner) và popup báo lỗi. | 10/07/2026 | 10/07/2026 |
 
 ### Kết quả đạt được:
 

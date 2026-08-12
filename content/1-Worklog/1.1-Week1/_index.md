@@ -14,11 +14,11 @@ pre: " <b> 1.1. </b> "
 
 | Day | Task | Start Date | Completion Date |
 | --- | --- | --- | --- |
-| Mon | - Learn AWS Cloud concepts (EC2, S3, VPC) and set up IAM with least privilege. | 06/22/2026 | 06/22/2026 |
-| Tue | - Initialize Amazon S3 Bucket and upload game graphic assets. | 06/23/2026 | 06/23/2026 |
-| Wed | - Design basic network architecture (VPC, Subnets, Security Groups) for the project. | 06/24/2026 | 06/24/2026 |
-| Thu | - Initialize C# Monorepo project structure and create the GameShared library. | 06/25/2026 | 06/25/2026 |
-| Fri | - Finalize development environment (Unity, AWS CLI) and write initial design documents. | 06/26/2026 | 06/26/2026 |
+| Monday | - Learn AWS Cloud concepts (EC2, S3, VPC) and set up IAM with least privilege. | 06/22/2026 | 06/22/2026 |
+| Tuesday | - Initialize Amazon S3 Bucket and upload game graphic assets. | 06/23/2026 | 06/23/2026 |
+| Wednesday | - Design basic network architecture (VPC, Subnets, Security Groups) for the project. | 06/24/2026 | 06/24/2026 |
+| Thursday | - Initialize C# Monorepo project structure and create the GameShared library. | 06/25/2026 | 06/25/2026 |
+| Friday | - Finalize development environment (Unity, AWS CLI) and write initial design documents. | 06/26/2026 | 06/26/2026 |
 
 ### Achievements:
 

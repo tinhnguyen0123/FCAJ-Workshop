@@ -14,11 +14,11 @@ pre: " <b> 1.8. </b> "
 
 | Day | Task | Start Date | Completion Date |
 | --- | --- | --- | --- |
-| Mon | - Resolve outstanding bugs and optimize costs for unused AWS resources. | 08/10/2026 | 08/11/2026 |
-| Tue | - Continue to fix the remaining bugs. | 08/11/2026 | 08/11/2026 |
-| Wed | - Package entire source code (Frontend Unity + Backend CDK) and write README documentation. | 08/12/2026 | 08/12/2026 |
-| Thu | - Draft personal Internship Report, synthesizing technical metrics and achieved results. | 08/13/2026 | 08/15/2026 |
-| Fri | - Package all softcopy files and submit to the company's grading system. | 08/15/2026 | 08/15/2026 |
+| Monday | - Resolve outstanding bugs and optimize costs for unused AWS resources. | 08/10/2026 | 08/11/2026 |
+| Tuesday | - Continue to fix the remaining bugs. | 08/11/2026 | 08/11/2026 |
+| Wednesday | - Package entire source code (Frontend Unity + Backend CDK) and write README documentation. | 08/12/2026 | 08/12/2026 |
+| Thursday | - Draft personal Internship Report, synthesizing technical metrics and achieved results. | 08/13/2026 | 08/15/2026 |
+| Friday | - Package all softcopy files and submit to the company's grading system. | 08/15/2026 | 08/15/2026 |
 
 ### Achievements:
 

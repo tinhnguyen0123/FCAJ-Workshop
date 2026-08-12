@@ -14,11 +14,11 @@ pre: " <b> 1.5. </b> "
 
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành |
 | --- | --- | --- | --- |
-| T2 | - Tái cấu trúc Backend .NET 8 thành các hàm AWS Lambda Handlers độc lập. | 20/07/2026 | 20/07/2026 |
-| T3 | - Cấu hình Amazon API Gateway làm cổng giao tiếp kết nối với AWS Lambda. | 21/07/2026 | 21/07/2026 |
-| T4 | - Đóng gói Backend thành Docker Image và triển khai lên Amazon Elastic Container Registry (ECR). | 22/07/2026 | 22/07/2026 |
-| T5 | - Hoàn thiện các giao diện Unity (MainMenu, StoryView, BattleView, InventoryView). | 23/07/2026 | 23/07/2026 |
-| T6 | - Kết nối toàn bộ UI Presenters trên Unity với hệ thống API Gateway Serverless mới. | 24/07/2026 | 24/07/2026 |
+| Thứ 2 | - Tái cấu trúc Backend .NET 8 thành các hàm AWS Lambda Handlers độc lập. | 20/07/2026 | 20/07/2026 |
+| Thứ 3 | - Cấu hình Amazon API Gateway làm cổng giao tiếp kết nối với AWS Lambda. | 21/07/2026 | 21/07/2026 |
+| Thứ 4 | - Đóng gói Backend thành Docker Image và triển khai lên Amazon Elastic Container Registry (ECR). | 22/07/2026 | 22/07/2026 |
+| Thứ 5 | - Hoàn thiện các giao diện Unity (MainMenu, StoryView, BattleView, InventoryView). | 23/07/2026 | 23/07/2026 |
+| Thứ 6 | - Kết nối toàn bộ UI Presenters trên Unity với hệ thống API Gateway Serverless mới. | 24/07/2026 | 24/07/2026 |
 
 ### Kết quả đạt được:
 

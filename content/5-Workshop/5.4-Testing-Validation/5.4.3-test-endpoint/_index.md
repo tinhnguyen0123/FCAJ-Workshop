@@ -55,6 +55,17 @@ In this step, you will test generating real-time AI story choices via **AWS Bedr
   }
   ```
 
+  Save `sessionId` for the next request.
+
+**Unity Client Code Reference** (`Assets/Scripts/API/StoryApiService.cs`):
+```csharp
+public async Task<StoryActionResponse> StartStoryAsync(string characterId, string storyFileId = "prologue")
+{
+    var body = new StoryStartBody { characterId = characterId, storyFileId = storyFileId };
+    return await ApiClient.Instance.PostAsync<StoryActionResponse>("story/start", body);
+}
+```
+
 ---
 
 #### 2. Execute Custom Story Action (`POST /story/action`)
@@ -90,6 +101,24 @@ In this step, you will test generating real-time AI story choices via **AWS Bedr
   }
   ```
 
+  When `triggerBattle: true`, the Unity Client automatically transitions to `BattleScene.unity` and spawns the boss encounter.
+
+**Unity Client Code Reference** (`Assets/Scripts/API/StoryApiService.cs`):
+```csharp
+public async Task<StoryActionResponse> SendActionAsync(string characterId, string sessionId,
+    int choiceIndex, string playerInput)
+{
+    var body = new StoryActionBody
+    {
+        characterId = characterId,
+        sessionId = sessionId,
+        choiceIndex = choiceIndex,
+        playerInput = playerInput
+    };
+    return await ApiClient.Instance.PostAsync<StoryActionResponse>("story/action", body);
+}
+```
+
 ---
 
 #### 3. Resolve Battle Action (`POST /battle/resolve`)
@@ -99,10 +128,7 @@ In this step, you will test generating real-time AI story choices via **AWS Bedr
   ```json
   {
     "characterId": "char-uuid-1234",
-    "encounterId": "encounter-8888",
-    "equippedItemIds": [
-      "item_rusty_sword"
-    ]
+    "encounterId": "encounter-8888"
   }
   ```
 - **Expected Response (200 OK):**
@@ -117,9 +143,7 @@ In this step, you will test generating real-time AI story choices via **AWS Bedr
       "playerPower": 150.0,
       "bossPower": 80.0,
       "battleScore": 70.0,
-      "luckyEffects": [
-        "Critical Hit"
-      ],
+      "luckyEffects": ["Critical Hit"],
       "turns": [
         {
           "attackerName": "Valerius",
@@ -161,3 +185,12 @@ In this step, you will test generating real-time AI story choices via **AWS Bedr
     }
   }
   ```
+
+**Unity Client Code Reference** (`Assets/Scripts/API/BattleApiService.cs`):
+```csharp
+public async Task<string> ResolveBattleAsync(string characterId, string encounterId)
+{
+    var body = JsonUtility.ToJson(new ResolveBody { characterId = characterId, encounterId = encounterId });
+    return await ApiClient.Instance.PostRawAsync("/battle/resolve", body);
+}
+```

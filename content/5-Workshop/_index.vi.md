@@ -8,11 +8,13 @@ pre: " <b> 5. </b> "
 
 # Xây dựng & Triển khai Backend Game AI Dungeon RPG trên AWS
 
+![Architecture Overview](images/arch_overview.png)
+
 #### Tổng quan
 
-**AI Dungeon RPG Adventure Game** là tựa game 2D RPG hiện đại kết hợp Generative AI (**AWS Bedrock**) cùng kiến trúc Serverless linh hoạt và tối ưu chi phí trên AWS (**.NET 8 Lambda**, **Amazon API Gateway**, **Amazon Cognito**, **Amazon DynamoDB**).
+**AI Dungeon RPG Adventure Game** là tựa game 2D RPG Unity hiện đại kết hợp Generative AI (**AWS Bedrock**) cùng kiến trúc Serverless linh hoạt và tối ưu chi phí trên AWS (**.NET 8 Lambda**, **Amazon API Gateway**, **Amazon Cognito**, **Amazon DynamoDB**).
 
-Trong bài workshop này, bạn sẽ học cách thiết lập, triển khai (IaC), kiểm thử và xác minh một backend Serverless hoàn chỉnh cho game tích hợp AI, sẵn sàng kết nối với Unity 2D Client.
+Trong bài workshop này, bạn sẽ học cách thiết lập, triển khai (IaC), kiểm thử và xác minh một backend Serverless hoàn chỉnh cho game tích hợp AI, sẵn sàng kết nối với Unity 2D Client được xây dựng theo mô hình **MVP (Model-View-Presenter)**.
 
 #### Các điểm nổi bật
 
@@ -20,6 +22,9 @@ Trong bài workshop này, bạn sẽ học cách thiết lập, triển khai (Ia
 - **Kiến trúc Serverless:** Khả năng mở rộng tự động, chi phí theo lượng sử dụng (Pay-as-you-go) với AWS Lambda (.NET 8) và DynamoDB.
 - **Bảo mật Server-Authoritative:** Xác thực người dùng qua AWS Cognito, tính toán chỉ số, máu và vật phẩm hoàn toàn ở phía Server để chống gian lận.
 - **Infrastructure as Code (IaC):** Tự động hóa triển khai hạ tầng bằng AWS CDK (C#).
+- **C# Full-Stack Monorepo:** Thư viện `GameShared` dùng chung giữa Unity Client và AWS Lambda Backend, loại bỏ lỗi không đồng bộ schema.
+- **Kiến trúc Unity MVP:** Tách biệt rõ ràng Model / Presenter / View trên tất cả các màn hình game.
+- **Mock / Online Mode:** Unity Client hỗ trợ chuyển đổi linh hoạt giữa Mock Mode (offline, không cần backend) và Online Mode qua `GameConfigSO`.
 
 #### Nội dung
 

@@ -39,6 +39,8 @@ In this step, you will test user registration, login, JWT token retrieval from A
   }
   ```
 
+> **Note**: `errorCode: "USER_NOT_CONFIRMED"` is expected behavior. AWS Cognito sends a verification email to the registered address. Confirm the user via the **Cognito Console** (*User Pools → Users → Confirm User*) before proceeding to Login.
+
 ---
 
 #### 2. Login User (`POST /auth/login`)
@@ -66,6 +68,19 @@ In this step, you will test user registration, login, JWT token retrieval from A
     }
   }
   ```
+
+  Save the `token` (Access Token) as `{{ID_TOKEN}}` in your Postman environment for subsequent requests.
+
+**Unity Client Code Reference** (`Assets/Scripts/API/AuthApiService.cs`):
+```csharp
+public async Task<LoginResponseData> LoginAsync(string username, string password)
+{
+    var body = new LoginRequestData { username = username, password = password };
+    string json = await ApiClient.Instance.PostRawAsync("/auth/login", JsonUtility.ToJson(body));
+    if (json == null) return null;
+    return JsonUtility.FromJson<LoginResponseData>(json);
+}
+```
 
 ---
 
@@ -102,3 +117,14 @@ In this step, you will test user registration, login, JWT token retrieval from A
     }
   }
   ```
+
+  Save `characterId` — you will need it for Story and Battle API calls.
+
+**Unity Client Code Reference** (`Assets/Scripts/API/CharacterApiService.cs`):
+```csharp
+public async Task<string> CreateCharacterAsync(string userId, string name, string className)
+{
+    var body = JsonUtility.ToJson(new CreateBody { userId = userId, name = name, className = className });
+    return await ApiClient.Instance.PostRawAsync("/character", body);
+}
+```

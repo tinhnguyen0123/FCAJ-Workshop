@@ -14,11 +14,11 @@ pre: " <b> 1.5. </b> "
 
 | Day | Task | Start Date | Completion Date |
 | --- | --- | --- | --- |
-| Mon | - Refactor .NET 8 Backend into independent AWS Lambda Handlers. | 07/20/2026 | 07/20/2026 |
-| Tue | - Configure Amazon API Gateway as the communication portal to AWS Lambda. | 07/21/2026 | 07/21/2026 |
-| Wed | - Package Backend into Docker Image and deploy to Amazon Elastic Container Registry (ECR). | 07/22/2026 | 07/22/2026 |
-| Thu | - Complete Unity interfaces (MainMenu, StoryView, BattleView, InventoryView). | 07/23/2026 | 07/23/2026 |
-| Fri | - Connect all UI Presenters in Unity to the new Serverless API Gateway system. | 07/24/2026 | 07/24/2026 |
+| Monday | - Refactor .NET 8 Backend into independent AWS Lambda Handlers. | 07/20/2026 | 07/20/2026 |
+| Tuesday | - Configure Amazon API Gateway as the communication portal to AWS Lambda. | 07/21/2026 | 07/21/2026 |
+| Wednesday | - Package Backend into Docker Image and deploy to Amazon Elastic Container Registry (ECR). | 07/22/2026 | 07/22/2026 |
+| Thursday | - Complete Unity interfaces (MainMenu, StoryView, BattleView, InventoryView). | 07/23/2026 | 07/23/2026 |
+| Friday | - Connect all UI Presenters in Unity to the new Serverless API Gateway system. | 07/24/2026 | 07/24/2026 |
 
 ### Achievements:
 

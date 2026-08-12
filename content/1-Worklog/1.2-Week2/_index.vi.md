@@ -14,11 +14,11 @@ pre: " <b> 1.2. </b> "
 
 | Ngày | Công việc | Ngày bắt đầu | Ngày hoàn thành |
 | --- | --- | --- | --- |
-| T2 | - Khởi tạo Amazon Cognito (User Pool, App Client) cho hệ thống xác thực người dùng. | 29/06/2026 | 29/06/2026 |
-| T3 | - Lập trình API Đăng nhập/Đăng ký và xử lý cấp phát JWT Tokens (Access/Refresh Token). | 30/06/2026 | 30/06/2026 |
-| T4 | - Thiết kế các DTOs (Character, Battle, Inventory) trong thư viện GameShared. | 01/07/2026 | 01/07/2026 |
-| T5 | - Cấu hình serialization JSON cho các DTOs để đồng bộ dữ liệu giữa Backend và Unity. | 02/07/2026 | 02/07/2026 |
-| T6 | - Thiết kế giao diện UI cơ bản trên Unity và tích hợp luồng xác thực Cognito vào game. | 03/07/2026 | 03/07/2026 |
+| Thứ 2 | - Khởi tạo Amazon Cognito (User Pool, App Client) cho hệ thống xác thực người dùng. | 29/06/2026 | 29/06/2026 |
+| Thứ 3 | - Lập trình API Đăng nhập/Đăng ký và xử lý cấp phát JWT Tokens (Access/Refresh Token). | 30/06/2026 | 30/06/2026 |
+| Thứ 4 | - Thiết kế các DTOs (Character, Battle, Inventory) trong thư viện GameShared. | 01/07/2026 | 01/07/2026 |
+| Thứ 5 | - Cấu hình serialization JSON cho các DTOs để đồng bộ dữ liệu giữa Backend và Unity. | 02/07/2026 | 02/07/2026 |
+| Thứ 6 | - Thiết kế giao diện UI cơ bản trên Unity và tích hợp luồng xác thực Cognito vào game. | 03/07/2026 | 03/07/2026 |
 
 ### Kết quả đạt được:
 
