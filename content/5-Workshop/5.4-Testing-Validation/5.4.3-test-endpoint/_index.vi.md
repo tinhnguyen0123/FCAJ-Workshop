@@ -1,5 +1,5 @@
 ---
-title : "Testing AWS Bedrock AI Story & Combat APIs"
+title : "Kiểm thử endpoint"
 date : 2024-01-01
 weight : 3
 chapter : false

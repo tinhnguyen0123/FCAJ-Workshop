@@ -1,37 +1,42 @@
 ---
-title : "Dọn dẹp tài nguyên"
+title : "Tài liệu Tham khảo"
 date : 2024-01-01
 weight : 6
 chapter : false
 pre : " <b> 5.6. </b> "
 ---
 
-#### Dọn dẹp tài nguyên
+#### Tài liệu Chính thức & Nguồn Tham khảo Hữu ích
 
-Xin chúc mừng bạn đã hoàn thành xong lab này!
-Trong lab này, bạn đã học về các mô hình kiến trúc để truy cập Amazon S3 mà không sử dụng Public Internet.
+Để tìm hiểu sâu hơn về kiến trúc, công nghệ và mô hình thiết kế được áp dụng trong **AI Dungeon RPG Adventure Game**, bạn có thể tham khảo các tài liệu chính thức dưới đây:
 
-+ Bằng cách tạo Gateway endpoint, bạn đã cho phép giao tiếp trực tiếp giữa các tài nguyên EC2 và Amazon S3, mà không đi qua Internet Gateway.
-Bằng cách tạo Interface endpoint, bạn đã mở rộng kết nối S3 đến các tài nguyên chạy trên trung tâm dữ liệu trên chỗ của bạn thông qua AWS Site-to-Site VPN hoặc Direct Connect.
+---
 
-#### Dọn dẹp
-1. Điều hướng đến Hosted Zones trên phía trái của bảng điều khiển Route 53. Nhấp vào tên của  s3.us-east-1.amazonaws.com zone. Nhấp vào Delete và xác nhận việc xóa bằng cách nhập từ khóa "delete".
+#### 1. AWS Generative AI & AWS Bedrock
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/delete-zone.png)
+- [Hướng dẫn Phát triển AWS Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html)
+- [Mô hình Anthropic Claude trên AWS Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-claude.html)
+- [Kỹ thuật Viết Prompt (Prompt Engineering Guidelines)](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-engineering-guidelines.html)
 
-2. Disassociate Route 53 Resolver Rule - myS3Rule from "VPC Onprem" and Delete it. 
+---
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/vpc.png)
+#### 2. AWS Serverless Compute & Database
 
-4.Mở console của CloudFormation và xóa hai stack CloudFormation mà bạn đã tạo cho bài thực hành này:
-+ PLOnpremSetup
-+ PLCloudSetup
+- [Hướng dẫn AWS Lambda Runtime .NET 8](https://docs.aws.amazon.com/lambda/latest/dg/dotnet-image.html)
+- [Tài liệu Amazon API Gateway REST API](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)
+- [Quản lý Người dùng với Amazon Cognito User Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html)
+- [Các Thực tiễn Tốt nhất cho Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html)
 
-![delete stack](/images/5-Workshop/5.6-Cleanup/delete-stack.png)
+---
 
-5. Xóa các S3 bucket
+#### 3. Hạ tầng dưới dạng Mã nguồn (AWS CDK C#)
 
-+ Mở bảng điều khiển S3
-+ Chọn bucket chúng ta đã tạo cho lab, nhấp chuột và xác nhận là empty. Nhấp Delete và xác nhận delete.
-+ 
-![delete s3](/images/5-Workshop/5.6-Cleanup/delete-s3.png)
+- [Tài liệu Tra cứu AWS CDK (.NET/C#)](https://docs.aws.amazon.com/cdk/api/v2/dotnet/api/index.html)
+- [Khái niệm và Kiến trúc AWS CDK](https://aws.amazon.com/cdk/)
+
+---
+
+#### 4. Phát triển Game & Tích hợp Unity
+
+- [Tài liệu UnityWebRequest & Xử lý JSON trong Unity](https://docs.unity3d.com/Manual/UnityWebRequest.html)
+- [Mô hình Monorepo Chia sẻ Thư viện C# giữa Unity & .NET](https://learn.microsoft.com/en-us/dotnet/standard/net-standard)

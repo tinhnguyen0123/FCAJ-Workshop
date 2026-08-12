@@ -1,32 +1,42 @@
 ---
-title : "Clean up"
+title : "References & Resources"
 date : 2024-01-01
 weight : 6
 chapter : false
 pre : " <b> 5.6. </b> "
 ---
-Congratulations on completing this workshop! 
-In this workshop, you learned architecture patterns for accessing Amazon S3 without using the Public Internet. 
-+ By creating a gateway endpoint, you enabled direct communication between EC2 resources and Amazon S3, without traversing an Internet Gateway. 
-+ By creating an interface endpoint you extended S3 connectivity to resources running in your on-premises data center via AWS Site-to-Site VPN or Direct Connect. 
 
-#### clean up
-1. Navigate to Hosted Zones on the left side of Route 53 console. Click the name of *s3.us-east-1.amazonaws.com* zone. Click Delete and confirm deletion by typing delete. 
+#### Official Documentation & Helpful Resources
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/delete-zone.png)
+To deepen your understanding of the architecture, technologies, and patterns used in the **AI Dungeon RPG Adventure Game**, refer to the following official resources:
 
-2. Disassociate the Route 53 Resolver Rule - myS3Rule from "VPC Onprem" and Delete it. 
+---
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/vpc.png)
+#### 1. AWS Generative AI & AWS Bedrock
 
-4. Open the CloudFormation console  and delete the two CloudFormation Stacks that you created for this lab:
-+ PLOnpremSetup
-+ PLCloudSetup
+- [AWS Bedrock Developer Guide](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html)
+- [Anthropic Claude Models on AWS Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-claude.html)
+- [Prompt Engineering Best Practices](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-engineering-guidelines.html)
 
-![delete stack](/images/5-Workshop/5.6-Cleanup/delete-stack.png)
+---
 
-5. Delete S3 buckets
-+ Open S3 console
-+ Choose the bucket we created for the lab, click and confirm empty. Click delete and confirm delete.
+#### 2. AWS Serverless Compute & Database
 
-![delete s3](/images/5-Workshop/5.6-Cleanup/delete-s3.png)
+- [AWS Lambda .NET 8 Runtime Guide](https://docs.aws.amazon.com/lambda/latest/dg/dotnet-image.html)
+- [Amazon API Gateway REST API Documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)
+- [Amazon Cognito User Pools & Identity Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html)
+- [Amazon DynamoDB Best Practices & Single-Table Design](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html)
+
+---
+
+#### 3. Infrastructure as Code (AWS CDK C#)
+
+- [AWS CDK Reference (.NET/C#)](https://docs.aws.amazon.com/cdk/api/v2/dotnet/api/index.html)
+- [AWS Serverless Application Model (SAM) vs CDK](https://aws.amazon.com/cdk/)
+
+---
+
+#### 4. Game Development & Unity Integration
+
+- [Unity UnityWebRequest & JSON Parsing Documentation](https://docs.unity3d.com/Manual/UnityWebRequest.html)
+- [Monorepo Design Pattern for Unity & .NET Shared Libraries](https://learn.microsoft.com/en-us/dotnet/standard/net-standard)

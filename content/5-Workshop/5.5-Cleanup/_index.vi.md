@@ -1,5 +1,5 @@
 ---
-title : "Dọn dẹp Tài nguyên"
+title : "Dọn dẹp"
 date : 2024-01-01
 weight : 5
 chapter : false
