@@ -1,18 +1,50 @@
 ---
-title : "Introduction"
+title : "Workshop Overview"
 date : 2024-01-01 
 weight : 1 
 chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-#### VPC endpoints
-+ **VPC endpoints** are virtual devices. They are horizontally scaled, redundant, and highly available VPC components. They allow communication between your compute resources and AWS services without imposing availability risks.
-+ Compute resources running in VPC can access  **Amazon S3**  using a Gateway endpoint. PrivateLink interface endpoints can be used by compute resources running in VPC or on-premises.
+#### Architecture Overview
 
-#### Workshop overview
-In this workshop, you will use two VPCs. 
-+ **"VPC Cloud"** is for cloud resources such as a  **Gateway endpoint** and an EC2 instance to test with. 
-+ **"VPC On-Prem"** simulates an on-premises environment such as a factory or corporate datacenter. An EC2 instance running strongSwan VPN software has been deployed in "VPC On-prem" and automatically configured to establish a Site-to-Site VPN tunnel with AWS Transit Gateway. This VPN simulates connectivity from an on-premises location to the AWS cloud. To minimize costs, only one VPN instance is provisioned to support this workshop. When planning VPN connectivity for your production workloads, AWS recommends using multiple VPN devices for high availability.
+The **AI Dungeon RPG Adventure Game** architecture decouples the Unity 2D Game Client from the AWS Cloud Backend to ensure security, high performance, and minimal operational overhead.
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+```text
+[ Unity 2D Client ]
+       │ (REST APIs + JWT Token)
+       ▼
+[ Amazon API Gateway ] ◄───► [ Amazon Cognito (User Pool) ]
+       │
+       ▼
+[ AWS Lambda Functions (.NET 8) ]
+   ├── Auth & Character Service
+   ├── Story & Prompt Builder Service ◄───► [ AWS Bedrock (Claude / Nova) ]
+   ├── Battle & Boss Combat Resolver
+   └── Inventory & Item Management
+       │
+       ▼
+[ Amazon DynamoDB Tables ]
+```
+
+#### Core Components
+
+1. **Unity 2D Game Client:**
+   - User Interface for Authentication, Character Selection, Dynamic Story Dialogue, and Turn-based Battle.
+   - Shares C# DTOs and Domain Models with the Backend via a `shared` C# class library.
+
+2. **Amazon API Gateway & Amazon Cognito:**
+   - API Gateway acts as the single entry point for all game endpoints.
+   - Amazon Cognito manages user registration, login authentication, and issues JWT tokens.
+
+3. **AWS Lambda (.NET 8):**
+   - High-performance, serverless backend compute handling authentication, character state management, item inventory, battle resolution, and AI prompt building.
+
+4. **AWS Bedrock:**
+   - Serves as the AI Dungeon Master. Generates immersive storylines, dynamically evaluates player choices, and crafts vivid combat narratives in real-time.
+
+5. **Amazon DynamoDB:**
+   - Ultra-fast, single-digit millisecond latency NoSQL database storing Users, Characters, Items, Story Sessions, and Boss Encounters.
+
+6. **AWS CDK (C#):**
+   - Defines the entire cloud infrastructure as code in C#, enabling repeatable and reliable deployments.

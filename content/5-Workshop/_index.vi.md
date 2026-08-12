@@ -6,25 +6,26 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-
-
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+# Xây dựng & Triển khai Backend Game AI Dungeon RPG trên AWS
 
 #### Tổng quan
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+**AI Dungeon RPG Adventure Game** là tựa game 2D RPG hiện đại kết hợp Generative AI (**AWS Bedrock**) cùng kiến trúc Serverless linh hoạt và tối ưu chi phí trên AWS (**.NET 8 Lambda**, **Amazon API Gateway**, **Amazon Cognito**, **Amazon DynamoDB**).
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
+Trong bài workshop này, bạn sẽ học cách thiết lập, triển khai (IaC), kiểm thử và xác minh một backend Serverless hoàn chỉnh cho game tích hợp AI, sẵn sàng kết nối với Unity 2D Client.
 
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+#### Các điểm nổi bật
+
+- **Tích hợp AWS Bedrock:** Sinh cốt truyện và xử lý trận đánh theo lượt (turn-based) thời gian thực bằng Mô hình ngôn ngữ lớn (LLM).
+- **Kiến trúc Serverless:** Khả năng mở rộng tự động, chi phí theo lượng sử dụng (Pay-as-you-go) với AWS Lambda (.NET 8) và DynamoDB.
+- **Bảo mật Server-Authoritative:** Xác thực người dùng qua AWS Cognito, tính toán chỉ số, máu và vật phẩm hoàn toàn ở phía Server để chống gian lận.
+- **Infrastructure as Code (IaC):** Tự động hóa triển khai hạ tầng bằng AWS CDK (C#).
 
 #### Nội dung
 
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+1. [Tổng quan về Workshop](5.1-Workshop-overview/)
+2. [Các tiền đề cần chuẩn bị](5.2-Prerequiste/)
+3. [Hướng dẫn triển khai chi tiết](5.3-Detail-guide/)
+4. [Kiểm thử và Xác minh](5.4-Testing-Validation/)
+5. [Dọn dẹp tài nguyên](5.5-Cleanup/)
+6. [Tài liệu tham khảo](5.6-References/)
