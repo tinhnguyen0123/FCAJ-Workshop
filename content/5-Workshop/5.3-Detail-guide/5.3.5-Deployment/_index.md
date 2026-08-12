@@ -37,7 +37,7 @@ Amazon S3 acts as the centralized storage hosting all static files produced by t
 2. **Create S3 Bucket:** In the Amazon S3 Buckets dashboard, click **Create bucket**.
    ![Create new S3 Bucket](images/S3/2.jpg)
 
-3. **Configure Bucket Name:** Under **Bucket name**, enter a unique name (lowercase, no spaces or special characters, e.g., `ai-dungeon-rpg-game-webgl`).
+3. **Configure Bucket Name:** Under **Bucket name**, enter a unique name (lowercase, no spaces or special characters, e.g., `ai-test-game`).
    ![Specify Bucket Name](images/S3/3.jpg)
 
 4. **Configure Public Access Settings:**
@@ -82,7 +82,7 @@ Amazon S3 acts as the centralized storage hosting all static files produced by t
 
 7. **Upload WebGL Files to S3:**
    - Verify **Block public access** displays `Off`. Switch to the **Objects** tab.
-     ![Verify Public Access and switch to Objects tab](images/Objects tab](images/S3/11.jpg)
+     ![Verify Public Access Off and switch to Objects tab](images/S3/11.jpg)
    - Click **Upload** and upload all generated build items from Phase 1 (`index.html`, `Build/` folder, `TemplateData/` folder) to the bucket.
      ![Upload WebGL build files to S3](images/S3/12.jpg)
 
