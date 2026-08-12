@@ -8,7 +8,7 @@ pre: " <b> 5. </b> "
 
 # Building & Deploying AI Dungeon RPG Game Backend on AWS
 
-![Architecture Overview](images/aws-architect-project.jpg)
+![Architecture Overview](../../images/workshop/arch_overview.png)
 
 #### Overview
 

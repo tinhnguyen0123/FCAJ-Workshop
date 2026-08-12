@@ -7,10 +7,10 @@ pre: " <b> 1. </b> "
 ---
 
 
-**Trong trang này** Tôi sẽ giới thiệu về **worklog** của tôi như thế nào? Tôi hoàn thành chương trình trong vòng **bao nhiêu tuần**? Tôi **đã làm gì** trong các tuần đó?
+**Trong trang này** Tôi sẽ giới thiệu về **nhật ký công việc** của tôi như thế nào? Tôi hoàn thành chương trình trong vòng **bao nhiêu tuần**? Tôi **đã làm gì** trong các tuần đó?
 
 
-**worklog** của tôi được thực hiện trong khoảng 2 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:
+**Nhật ký công việc** của tôi được thực hiện trong khoảng 2 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:
 
 **Tuần 1:** [Tìm hiểu AWS và khởi tạo hạ tầng dự án](1.1-week1/)
 
